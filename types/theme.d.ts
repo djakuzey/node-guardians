@@ -7,10 +7,12 @@ declare module 'styled-components' {
 			m: string;
 			l: string;
 		};
+		polygon: string;
 		spacing: {
 			unset: string;
 			'6xs': string;
 			'5xs': string;
+			'3.5xs': string;
 			'4xs': string;
 			'3xs': string;
 			'2xs': string;
@@ -29,6 +31,8 @@ declare module 'styled-components' {
 		};
 		colors: {
 			gold: string;
+			lightGold: string;
+			darkGold: string;
 			white: string;
 			grey: string;
 			darkGrey: string;

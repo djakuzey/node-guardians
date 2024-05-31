@@ -1,3 +1,7 @@
+"use client";
+import styled from "styled-components";
+import Header from "@/components/Header";
+
 import { ClientProviders } from './providers';
 import StyledComponentsRegistry from './registry';
 
@@ -19,9 +23,22 @@ export default function RootLayout({
 
 			<body>
 				<StyledComponentsRegistry>
-					<ClientProviders>{children}</ClientProviders>
+					<ClientProviders>
+						<Content>
+							<Header/>
+							{children}
+						</Content>
+					</ClientProviders>
 				</StyledComponentsRegistry>
 			</body>
 		</html>
 	);
 }
+
+const Content = styled.div`
+	background: url("/assets/background.png") no-repeat center center fixed;
+	height: 100vh;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+`

@@ -20,7 +20,9 @@ const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
 	}
 
 	body {
+    margin: 0;
 		background-color: ${({ theme }) => theme.colors.black};
+    color: ${({ theme }) => theme.colors.white};
 	}
 
 	h1,
@@ -37,6 +39,10 @@ const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
 	b {
 		font-weight: 700;
 	}
+  
+  a {
+    text-decoration: none;
+  }
 
 	p,
 	span,
