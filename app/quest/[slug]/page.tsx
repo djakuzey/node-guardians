@@ -158,7 +158,8 @@ const ButtonsContainer = styled.div`
 `
 
 const Description = styled.p`
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.lightGrey};
+  font-size: 14px;
   margin-top: ${({ theme }) => theme.spacing['3xs']};
   height: 135px;
   margin-bottom: 28px;
